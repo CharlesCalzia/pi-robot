@@ -1,7 +1,7 @@
 pi_ip = '192.168.1.176' #Pi's IP address
 port = '8081' #motion port
 
-'''import RPi.GPIO as gpio
+import RPi.GPIO as gpio
 import time
     
 rc = 11 #right clockwise
@@ -98,7 +98,7 @@ def left(sec):
         clean()
 
 init()
-'''
+
 from flask import Flask, url_for, flash, redirect, render_template, request
 import socket
 
