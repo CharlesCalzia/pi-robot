@@ -33,8 +33,9 @@
   * Uses motion software
   * Installed through: sudo apt-get install motion
  
- * Main script:
-  * See main_app.py and edit variable my_ip to your Pi's IP address
+* Main script:
+  * See main_app.py and edit variable pi_ip to your Pi's IP address and port to your Pi's motion hosting port
   * Dependencies:
     * Flask: pip install Flask
     * RPi.GPIO: pip install RPi.GPIO
+  * This will then create a flask web server which can be acessed through your host's ip address on any port (default port is 5000). This will then prompt for username and password: default username = admin, default password = admin123. These should be changed and this can easily be done.
