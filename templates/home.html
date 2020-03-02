@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Raspberry Pi Robot</title>
+<style>
+#main_title{
+   color: red;
+   text-align: center;
+}
+
+.main{
+   
+
+}
+form{
+   display: inline;
+}
+#logout{
+   position: absolute;
+   top:0;
+   right:0;
+
+}
+#stream{
+   text-align: center;
+}
+
+
+#forward{
+	background-color: green;
+}
+
+#backward{
+	background-color: green;
+}
+
+#left{
+	background-color: green;
+}
+
+#right{
+	background-color: green;
+}
+</style>
+</head>
+<body>
+
+
+  <h1 id="main_title">Raspberry Pi Robot Control</h1>
+  <div style="text-align: center; width:320px;">
+	  <form action="/forward/" method="post">
+	    <button id="forward" name="forwardBtn" type="submit">Forward</button>
+	  </form>
+	  <br>
+	  <br>
+	  <form action="/left/" method="post">
+	    <button id="left" name="leftBtn" type="submit">Left</button>
+	  </form>
+	  <form action="/right/" method="post">
+	    <button id="right" name="rightBtn" type="submit">Right</button>
+	  </form>
+	  <br>
+	  <br>
+	  <form action="/backward/" method="post">
+	    <button id="backward" name="backwardBtn" type="submit">Backward</button>
+	  </form>
+	  
+  
+  </div>
+  <div id="stream">
+  	<img alt="Camera Stream from RPi not working" src={{ip}}>
+  </div>
+  <br>
+  <br>
+  <div id="logout">
+	<a href="logout"><button style="background-color:#ADD8E6">Logout</button></a>
+  </div>
+</body>
+</html>

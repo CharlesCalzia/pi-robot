@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Raspberry Pi Robot Login</title>
+<style>
+body{
+   background-image: url({{ url_for('static', filename='login_img.jpg') }});
+   text-align: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   min-width: 100%;
+   min-height: 100%;
+   
+   
+}
+
+.login-field{
+   height:40px;
+   width: 50%;
+   font-size:40px;
+}
+#submit-button{
+   background-color: green;
+   width: 50%;
+   height: 40px;
+   font-size: 40px;
+}
+
+</style>
+</head>
+<body>
+
+<form action="./login" method="POST">
+
+	<h1 id=app-title style="color: red; font-size:50px">Login</h1>
+
+	<input type="text" class="login-field" value="" placeholder="Username" name="username">
+	<label class="login-field-icon fui-user" for="login-name"></label>              
+	
+	<br>
+	<br>
+
+	<input type="password" class="login-field" value="" placeholder="Password" name="password">
+	<label class="login-field-icon fui-lock" for="login-pass"></label>
+
+	<br>
+	<br>
+	<input type="submit" value="Log in" id="submit-button">
+
+</form>
+
+</body>
+</html>
