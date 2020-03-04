@@ -22,8 +22,6 @@ def init():
     gpio.setup(trig, gpio.OUT)
     gpio.setup(echo, gpio.IN) #ultrasonic sensor
 
-init()
-
 def distance():
     global trig, echo
     gpio.output(trig, True)
