@@ -1,4 +1,4 @@
-# Pi_Robot
+# Pi Robot
 
 ## Hardware 
 
@@ -39,3 +39,8 @@
     * Flask: pip install Flask
     * RPi.GPIO: pip install RPi.GPIO
   * This will then create a flask web server which can be acessed through your host's ip address on any port (default port is 5000). This will then prompt for username and password: default username = admin, default password = admin123. These should be changed and this can easily be done.
+
+## License and copyright
+
+Copyright (c) Computing_
+Licensed under the [MIT License](LICENSE)
