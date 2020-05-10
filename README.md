@@ -42,5 +42,6 @@
 
 ## License and copyright
 
-Copyright (c) Computing_
+Copyright (c) Computing-tech
+
 Licensed under the [MIT License](LICENSE)
