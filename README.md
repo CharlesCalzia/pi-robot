@@ -42,6 +42,6 @@
 
 ## License and copyright
 
-Copyright (c) Computing-tech
+Copyright (c) Charles Calzia
 
 Licensed under the [MIT License](LICENSE)
